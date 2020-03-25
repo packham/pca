@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage{amsfonts,amssymb,amsthm,bm} %
+\usepackage[longnamesfirst]{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\usepackage[normalem]{ulem} %
+\usepackage[tbtags]{amsmath} %
+\usepackage{enumerate}
+\usepackage{fullpage}
+
+\usepackage{graphicx,color}
+\graphicspath{{./pics/}}
+\definecolor{BrickRed}{rgb}{.625,.25,.25}
+\providecommand{\red}[1]{\textcolor{BrickRed}{#1}}
+\definecolor{markergreen}{rgb}{0.6, 1.0, 0}
+\definecolor{darkgreen}{rgb}{0, .5, 0}
+\definecolor{darkred}{rgb}{.7,0,0}
+\providecommand{\marker}[1]{\fcolorbox{markergreen}{markergreen}{{#1}}}
+\providecommand{\natp}[1]{\textcolor{red}{\textit{Makrele: }#1}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary} %%
+\newtheorem{lemma}[theorem]{Lemma} %%
+\theoremstyle{definition} %%
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remarks}{Remarks}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+
+\input{definitions.tex}
+
+
+\begin{document}
+\title{\Large\bf title here} % 
+\author{N.\ Packham, A.\ Schieferdecker\footnotemark} %
+\maketitle %
+
+\begin{abstract}
+  \natp{abstract here}
+\end{abstract}
+
+\noindent Keywords: \medskip
+
+\noindent JEL classification: 
+
+%\tableofcontents
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+\clearpage
+
+\appendix
+
+\bibliographystyle{abbrvnamed} %
+\bibliography{finance} %
+
+\end{document}
